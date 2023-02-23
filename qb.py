@@ -8,17 +8,17 @@ import os
 from dotenv import load_dotenv
 
 auth_client = AuthClient(
-        client_id='AB4XiqeiADPn6wsAicYbm8RNfKpFadd3ddHq81Ymyr8hwk36W0',
-        client_secret='rQYGZucC4u5aSV0XZdESahxClde28wnHsptLlUxN',
-        access_token='eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..As14H_Hckep19t9Vp5gFRg.fbN7YVB9HOGyq9Wfe04bNXyO2wlwycTs-WWTF4MvyRHCE2R4nA_2d96ya4lqdnZt46L29XKGY4VPLDMz3DMDVDX2W-fwyWmJ6cDoRO1eDjk46VSHkx0xqBwoMuMp1S6Tg03ZtxbsOwmDZ_4e_1j8P9p3sMIq3f9TOwR6gPezRPzqRIJgcMCLdiX8tGYwOoT5YpK8rw8PFhthu7uQqpfLXa8Q4mecS-Wilehj6S_ynEPyylG3XOLHKAtFBZ-rvrDBPgsfWKyaVtuaHJlveL7ZzPoBotaCC0ZuCUkkITysVi2Kzkkdat-PGSEV3WD7NnXCEvxFGpGTNio3pQndn3k_FTdrwWeYgYdcjZyWaAa1YbY3MsYfUDshexjd13XjeqkOaOrmqKhho1lnZtzeFUF3eaZl11Aj5ZKUm6B7uKvxPKyVKh7bDHzr7KIw1m8Yg9lml78sCuPPCgvnSWQ4DlMPZV5E3nsYTdvDybJOuyCenmjKtiahwiWvF03jgWJY5PTTUj7FGjC1KGX7JLKIl9mTdL7cKZ1wHfW8k0DCqnsvYADbUAZpONOR4n2q_I7vaTE06Su-PJQqdpQZRzYdOFdmqSzJyb8xyo00gGlPCwh2rIazDrmEi1l7BCLO9DiFJvUm2yNxGm2-cqvRxDOJEXvKFC8VwlOEDqmkXd1X-yGwZ0zTvLXIw8bsAKc28od8LcKUchIql6BUMaZ8AkDHMWohGUScxQ1PxVxNySRkTbTP1hRdftIV_Vkt4wyef7_ykfawCwDw1E_OHsFYgZCbXLN2ang5_G-HJCDsd7i3_enwPL026Uy4fXN9TJXVVRyzyYzeCk9CMGic1P3e_G_g4lIFcbdxftihtcodhliTf0ihmv-PJPucyf9npSwdMn662iNQD2laY2dVxE0vw9ermp61tw.gXZ5Bn7M_bZgKl_NMyGsWQ',
+        client_id= os.getenv('client_id'),
+        client_secret= os.getenv('client_secret'),
+        access_token= os.getenv('access_token'),
         environment='sandbox',
         redirect_uri='http://localhost:8000/callback',
     )
 
 client = QuickBooks(
         auth_client=auth_client,
-        refresh_token='AB11685799922xSy6apj44mzj1N8SY0d5Eil9xDH1FQHCu1gCI',
-        company_id='4620816365281987550',
+        refresh_token=os.getenv('refresh_token'),
+        company_id=os.getenv('company_id'),
     )
 
 # from quickbooks.objects.customer import Customer
@@ -114,4 +114,12 @@ journal_entry.Line = [line_one, line_two]
 journal_entry.save(qb=client)
 
 print(journal_entry.Line)
+
+
+def journalentry():
+    #take parameters for details of each entry. Return JE object. including which account 
+
+#factories in python
+for account in df['account']:
+    journal_entry.account = 
 
