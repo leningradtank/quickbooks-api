@@ -28,5 +28,6 @@ client = QuickBooks(
 account = Account()
 account.Name = 'Test Alpaca'
 account.AccountType = 'Equity'
+account.
 
 account.save(qb=client)

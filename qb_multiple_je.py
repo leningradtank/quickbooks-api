@@ -29,6 +29,10 @@ df_upload = pd.read_csv('qb_data_2.csv')
 account_ref= Ref()
 account_ref.value = 114
 
+
+# validation for groupby and sum for account balance, calculate diff and should be zero.
+# sort values +ve and -ve, then iterate through debits, credits
+
 for index, row in df_upload.iterrows():
     account_ref.name = df_upload['Account'].iloc[index]
     account_ref.type = df_upload['Type'].iloc[index]
@@ -60,7 +64,7 @@ for index, row in df_upload.iterrows():
 
     line_two.JournalEntryLineDetail = detail_two
     line_two.LineNum = 1
-    line_two.Description = df_upload['Description'].iloc[index+=1]
+    line_two.Description = df_upload['Description'].iloc[index+1]
 
     amount = df_upload['Balance'].iloc[index+1]
 
