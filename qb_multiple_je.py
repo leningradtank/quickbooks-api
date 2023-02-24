@@ -33,12 +33,17 @@ account_ref.value = 114
 # validation for groupby and sum for account balance, calculate diff and should be zero.
 # sort values +ve and -ve, then iterate through debits, credits
 
+
+for entry in range(0,len(df)):
+
+    
+
 for index, row in df_upload.iterrows():
-    account_ref.name = df_upload['Account'].iloc[index]
-    account_ref.type = df_upload['Type'].iloc[index]
+    account_ref.name = df_upload['Account'].iloc[entry]
+    account_ref.type = df_upload['Type'].iloc[entry]
 
     detail_one = JournalEntryLineDetail()
-    detail_one.PostingType = df_upload['PostingType'].iloc[index]
+    detail_one.PostingType = df_upload['PostingType'].iloc[entry]
     detail_one.AccountRef = account_ref
 
     line_one = JournalEntryLine()
@@ -46,7 +51,7 @@ for index, row in df_upload.iterrows():
 
     line_one.JournalEntryLineDetail = detail_one
     line_one.LineNum = 0
-    line_one.Description = df_upload['Description'].iloc[index]
+    line_one.Description = df_upload['Description'].iloc[entry]
 
     amount = df_upload['Balance'].iloc[index]
 
@@ -74,6 +79,7 @@ for index, row in df_upload.iterrows():
 
     journal_entry = JournalEntry()
     journal_entry.Line = [line_one, line_two]
+    #append lines in the for loops in the list 
 
     journal_entry.save(qb=client)
 
