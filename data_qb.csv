@@ -1,0 +1,294 @@
+Account,Type,Detail type,Description,Balance,Currency
+1010 Operating Cash,Bank,Checking,,"1,056,274.89",USD
+1010 Operating Cash:111025 (1012) SVB Operating #7899,Bank,Checking,SVB Checking #7899,"477,122.45",USD
+1010 Operating Cash:111035 (1015) BMO Operating x0589,Bank,Checking,,"579,152.44",USD
+1010 Operating Cash:111100 (1016) BMO DTCC Settlement x7858,Bank,Checking,,0,USD
+1010 Operating Cash:111803 (1014) FRB Operating x4730,Bank,Checking,,0,USD
+1020 Customer Cash,Bank,Checking,,"14,792,025.24",USD
+1020 Customer Cash:111070 (1025) SVB Customer x7424,Bank,Checking,,"2,788,288.84",USD
+1020 Customer Cash:111080 (1040) BMO Customer x6877,Bank,Cash on hand,,"12,003,736.40",USD
+1020 Customer Cash:111804 (1021) FRB Customer x3110,Bank,Checking,Customer Operating Account,0,USD
+1070 Excl Benefit of Customer,Bank,Cash on hand,,"136,062,318.68",USD
+1070 Excl Benefit of Customer:113035 (1075) BMO Excl Bene of Cust x9367,Bank,Cash on hand,,"136,062,318.68",USD
+1070 Excl Benefit of Customer:113036 (1076) BMO Special Bene of CustX0860,Bank,Checking,,0,USD
+1070 Excl Benefit of Customer:113800 (1071) FRB - Excl Benefit of Cust_6148,Bank,Checking,,0,USD
+111095 Bill.com Money In Clearing,Bank,Cash on hand,For payments received via Bill.com,0,USD
+111095 Bill.com Money Out Clearing,Bank,Cash on hand,For payments made via Bill.com,"-41,417.41",USD
+111105 (1019) BMO Euro x30089,Bank,Checking,,0,EUR
+111110 (1018) BMO YEN 55533,Bank,Checking,,"-481,654,684.94",JPY
+121115 (1096) Allowance for Doubtful Debt,Accounts receivable (A/R),Accounts Receivable (A/R),,"-179,648.25",USD
+121210 (1098) Accounts Receivable (A/R),Accounts receivable (A/R),Accounts Receivable (A/R),,"1,381,410.42",USD
+121220 (1099) AR Offset,Accounts receivable (A/R),Accounts Receivable (A/R),,"-723,080.00",USD
+1100 Customer Debits,Other Current Assets,Other Current Assets,,"6,646,868.72",USD
+1100 Customer Debits:123010 (1110) Customer Control,Other Current Assets,Other Current Assets,,"6,223,044.59",USD
+1100 Customer Debits:123015 (1120) TD-SD Customer Difference,Other Current Assets,Other Current Assets,,"132,361.45",USD
+1100 Customer Debits:123020 (1140) Allowance for Accounts Uncollectible,Other Current Assets,Allowance for Bad Debts,,"-139,935.40",USD
+1100 Customer Debits:123030 (1150) Customer Suspense,Other Current Assets,Other Current Assets,,0,USD
+1100 Customer Debits:123030 (1160) Customer ACH Wash,Other Current Assets,Other Current Assets,,0,USD
+1100 Customer Debits:123030 - Customer Suspense,Other Current Assets,Other Current Assets,,"431,398.08",USD
+111199 (1540) BMO FX Settlement,Other Current Assets,Other Current Assets,,0,USD
+1200 Prop Securities - Long,Other Current Assets,Other Current Assets,,"177,952.85",USD
+1200 Prop Securities - Long:141010 (1201) Prop Trading Account - Long,Other Current Assets,Investments - Other,,"182,915.45",USD
+1200 Prop Securities - Long:141015 (1205) Prop Error Account,Other Current Assets,Inventory,,25.87,USD
+1200 Prop Securities - Long:141020 (1202) Prop Trading Account - Worthless Equities,Other Current Assets,Other Current Assets,,0.43,USD
+1200 Prop Securities - Long:141025 (1203) - Prop Trading Account - Avg Price,Other Current Assets,Other Current Assets,,0,USD
+1200 Prop Securities - Long:141030 (1220) - Prop Hedge Account - Equities,Other Current Assets,Other Current Assets,,0,USD
+1200 Prop Securities - Long:141310 (1230) Prop FX Inventory,Other Current Assets,Other Current Assets,,"-4,988.90",USD
+121230 - Partner JIT Receivable,Other Current Assets,Other Current Assets,,"1,017,572.88",USD
+121310 (1311) Intercompany Receivable- Crypto,Other Current Assets,Other Current Assets,,0,USD
+121310 Intercompany Receivable,Other Current Assets,Other Current Assets,,0,USD
+121410 (1599) Undeposited Funds,Other Current Assets,Undeposited Funds,,"-40,243.06",USD
+121420 (1590) Uncategorized Asset,Other Current Assets,Other Current Assets,,0,USD
+122031 (1550) Due to/From Omnibus - Velox x201,Other Current Assets,Other Current Assets,,"2,867,684.22",USD
+122050 (1520) Stock Borrow Fee Receivable,Other Current Assets,Other Current Assets,,"21,988.85",USD
+122060 (1530) Interest Receivable,Other Current Assets,Other Current Assets,,0,USD
+122070 (1570) Vision Omnibus x3031,Other Current Assets,Other Current Assets,,-181.95,USD
+122090 (1500) Other Receivables,Other Current Assets,Other Current Assets,,"-42,313.80",USD
+123030 (1510) Dividends Receivable,Other Current Assets,Other Current Assets,,0,USD
+123030 (1560) Customer Suspense Deposits,Other Current Assets,Other Current Assets,,0,USD
+1300 Prepaid Expenses,Other Current Assets,Other Current Assets,Prepaid Expenses,"184,948.47",USD
+1300 Prepaid Expenses:141110 (1310) Prepaid Expenses,Other Current Assets,Prepaid Expenses,Other Prepaid Expenses,"175,835.54",USD
+1300 Prepaid Expenses:141120 (1320) Prepaid Expenses-FINRA WEB CRD,Other Current Assets,Prepaid Expenses,Prepaid Expenses-FINRA WEB CRD,"9,112.93",USD
+1400 Due From Broker,Other Current Assets,Other Current Assets,,"-44,459.78",USD
+1400 Due From Broker:122010 (1410) Due from Executing Broker (PFOF),Other Current Assets,Other Current Assets,,"268,750.62",USD
+1400 Due From Broker:122020 (1430) ETC Misc. Fee Account 1212062017,Other Current Assets,Other Current Assets,ETC Misc. Fee Account 1212062017,116.62,USD
+1400 Due From Broker:122030 (1455) Velox Receivable,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122035 (1440) Velox Error 1PS00009,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122036 (1450) Velox Settlement 1PS00006,Other Current Assets,Other Current Assets,,"-313,530.09",USD
+1400 Due From Broker:122040 (1452) Vision Omni Settlement Account x3049,Other Current Assets,Other Current Assets,,195.72,USD
+1400 Due From Broker:122045 (1453) Vision Omni Prop Settlement,Other Current Assets,Other Current Assets,,3.4,USD
+1400 Due From Broker:122046 (1460) Vision error account,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122046 - (1472) Vision Error Account x3023,Other Current Assets,Other Current Assets,,3.95,USD
+1400 Due From Broker:122047 (1470) Vision Misc Fee X3015,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122900 (1416) APEX Account 3AP00101,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122910 (1417) APEX Account 3AP00102,Other Current Assets,Other Current Assets,,0,USD
+1400 Due From Broker:122920 (1420) ETC Error Account 1212062ERR,Other Current Assets,Other Current Assets,ETC Error Account 1212062ERR,0,USD
+1400 Due From Broker:123030 (1499) Conversion Suspense,Other Current Assets,Other Current Assets,,0,USD
+151010 (1299) Equity securities - user-held fractional shares,Other Current Assets,Other Current Assets,,"59,236,843.74",USD
+1700 Receivable from Partners,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1701) Receivable from Partners- Sinarmas,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1702) Receivable from Partners- Plum,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1703) Receivable from Partners- Shares,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1704) Receivable from Partners- Syfe Pte Ltd,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1705) Receivable from Partners- Orca App Ltd,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1706) Receivable from Partners- CardinalStone,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1707) Receivable from Partners- Chaka,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1708) Receivable from Partners- Gandalf,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1709) Receivable from Partners- GoTrade,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1710) Receivable from Partners- Midas,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1711) Receivable from Partners- Xantos Labs,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1712) Receivable from Partners- Streetbeat,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1713) Receivable from Partners- Lightyear,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1714) Receivable from Partners - Emma,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1715) Receivable from Partners - Fintual,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1716) Receivable from Partners - Oxygen,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1717) Receivable from Partners - Syfe Australia,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1718) Receivable from Partners - Social Stocks,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1719) Receivable from Partners - Nanovest,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1720) Receivable from Partners - LightYear Europe,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1721) Receivable from Partners - Plum Money Cy Limited,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1722) Receivable from Partners - Pluang,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1723) Receivable from Partners - Flahmingo,Other Current Assets,Other Current Assets,,0,USD
+1700 Receivable from Partners:121230 (1724) Receivable from Partners - Alpaca Japan,Other Current Assets,Other Current Assets,,0,USD
+Inventory Asset,Other Current Assets,Inventory,,0,USD
+131100 Office Deposits,Other Assets,Security Deposits,,"1,300.00",USD
+1800 Deposits with Clearing Organizations,Other Assets,Security Deposits,,"2,000,785.72",USD
+1800 Deposits with Clearing Organizations:131020 (1820) Velox Deposit 1PS00008,Other Assets,Security Deposits,,"2,000,000.00",USD
+1800 Deposits with Clearing Organizations:131030 (1825) Vision Deposit x3007,Other Assets,Security Deposits,,785.72,USD
+1800 Deposits with Clearing Organizations:131900 (1810) ETC Clearing Deposit,Other Assets,Security Deposits,,0,USD
+1800 Deposits with Clearing Organizations:131910 (1815) APEX Deposit Account,Other Assets,Security Deposits,APEX Deposit Account,0,USD
+211110 (2000) Accounts Payable (A/P),Accounts payable (A/P),Accounts Payable (A/P),,"-145,149.16",USD
+211300 (2100) Accrued Expenses,Other Current Liabilities,Other Current Liabilities,Accrued Expenses,"-328,104.07",USD
+211300 (2100) Accrued Expenses:211310 (2130) Accrued Legal Fees,Other Current Liabilities,Other Current Liabilities,Accrued Legal Fees,"-58,000.00",USD
+211300 (2100) Accrued Expenses:211320 (2140) Accrued Professional Fees,Other Current Liabilities,Other Current Liabilities,Accrued Professional Fees,"-104,084.00",USD
+211300 (2100) Accrued Expenses:211330 (2120) Accrued Expenses-Other,Other Current Liabilities,Other Current Liabilities,Accrued Expenses-Other,"-133,120.60",USD
+211300 (2100) Accrued Expenses:211340 (2110) Accrued Clearing and Execution Fees,Other Current Liabilities,Other Current Liabilities,Accrued Clearing and Execution Fees,"-32,899.47",USD
+212210 (2521) Commission Payable - Midas,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2701 Payables to Sinarmas,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2702 Payables to Plum,Other Current Liabilities,Other Current Liabilities,2702 Payables to Plum,0,USD
+212210 (2700) Payables to Partners:2703 Payable to Shares,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2704 Payable to Syfe Pte Ltd,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2705 Payable to Orca App Ltd,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2713 Payable to Lightyear,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2714 Payable to Emma,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2715 Payable to Fintual,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2716 Payable to Oxygen,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2717 Payable to Syfe Australia,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2718 Payable to Social Stocks,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2720 Payable to LightYear Europe,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2721 Payable to Plum Money Cy Limited,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2722 Payable to Pluang,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2723 Payable to Flahmingo,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 (2700) Payables to Partners:2724 Payable to Alpaca Japan,Other Current Liabilities,Other Current Liabilities,,0,USD
+212210 - Payables to Partners,Other Current Liabilities,Other Current Liabilities,,"-1,312,117.36",USD
+214010 (2303) Equity securities - fractional share repurchase obligations,Other Current Liabilities,Other Current Liabilities,,"-59,236,843.74",USD
+216010 (2400) Intercompany Payable,Other Current Liabilities,Other Current Liabilities,Intercompany Payable,0,USD
+216010 (2410) Intercompany - Alpaca Crypto,Other Current Liabilities,Other Current Liabilities,,0,USD
+216010 (2450) Intercompany Loan - AlpacaDB,Other Current Liabilities,Other Current Liabilities,,0,USD
+216010 - Intercompany Payables,Other Current Liabilities,Other Current Liabilities,,"411,126.82",USD
+2200 Customer Credits,Other Current Liabilities,Other Current Liabilities,,"-141,104,187.60",USD
+2200 Customer Credits:213010 (2210) Customer Control Payable,Other Current Liabilities,Other Current Liabilities,,0,USD
+2200 Customer Credits:213010 - Customer Control Payable,Other Current Liabilities,Other Current Liabilities,,"-141,104,187.60",USD
+2200 Customer Credits:213020 (2215) Trade/Settlement Customer Difference,Other Current Liabilities,Other Current Liabilities,,0,USD
+2300 Prop Securities - Short,Other Current Liabilities,Other Current Liabilities,,"-2,447.42",USD
+2300 Prop Securities - Short:215010 (2310) Prop Trading Balance - Short,Other Current Liabilities,Other Current Liabilities,,-585.12,USD
+2300 Prop Securities - Short:215015 Prop Trading Account - Avg Price,Other Current Liabilities,Other Current Liabilities,,-0.12,USD
+2300 Prop Securities - Short:215020 (2350) Prop Securities Error - Short,Other Current Liabilities,Other Current Liabilities,,0,USD
+2300 Prop Securities - Short:215025 (2330) FX Prop Inventory - Short,Other Current Liabilities,Other Current Liabilities,,"-1,862.18",USD
+2500 Other Current Liabilities,Other Current Liabilities,Other Current Liabilities,,"-3,909,468.18",USD
+2500 Other Current Liabilities:122037 (2506) Velox Cash Account 1PS00200,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:211910 (2580) Wash - Cash Receipts,Other Current Liabilities,Other Current Liabilities,,"401,386.90",USD
+2500 Other Current Liabilities:211920 (2581) Wash - Collections,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:211930 (2582) Wash - Invoiced Deposits,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:211940 Wash - Partner Settlement,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212130 (2505) Due to Omnibus,Other Current Liabilities,Other Current Liabilities,,"-3,960,753.83",USD
+2500 Other Current Liabilities:212140 (2510) Due to Broker,Other Current Liabilities,Other Current Liabilities,,"-313,617.19",USD
+2500 Other Current Liabilities:212150 (2520) Commission Payable - GoTrade,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2529) Local Currency Fee Payable,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2530) Fee Payable - GoTrade,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2531) Fee Payable - CardinalStone,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2532) Fee Payable - Midas,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2533) Fee Payable - Treegar,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2540) Trading Fees Payables (REG),Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 (2545) Trading Fees Payable (TAF),Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:212150 - Trading Fees Payable,Other Current Liabilities,Other Current Liabilities,,"-12,496.43",USD
+2500 Other Current Liabilities:213010 (2575) Dividend Payable,Other Current Liabilities,Other Current Liabilities,,-405.27,USD
+2500 Other Current Liabilities:215040 (2550) Trading Fees Payable (IRS),Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:215040 (2555) Federal Tax W/H Foreign Entities,Other Current Liabilities,Federal Income Tax Payable,,0,USD
+2500 Other Current Liabilities:215040 - Taxes Payable,Other Current Liabilities,Other Current Liabilities,,"-23,582.36",USD
+2500 Other Current Liabilities:215310 BMO OnDemand Line of Credit,Other Current Liabilities,Other Current Liabilities,,0,USD
+2500 Other Current Liabilities:216010 (2511) Affiliate Payable - Alpaca Japan,Other Current Liabilities,Other Current Liabilities,,0,USD
+3000 Opening Balance Equity,Equity,Opening Balance Equity,,0,USD
+3100 Owner's Investment,Equity,Owner's Equity,Money you invested in your business,"-25,612,500.00",USD
+3100 Owner's Investment:3120 Members's Equity,Equity,Owner's Equity,Member's Equity,0,USD
+3100 Owner's Investment:312110 (3110) Capital Contributions,Equity,Owner's Equity,Capital Contributions,"-25,612,500.00",USD
+Retained Earnings,Equity,Retained Earnings,,0,USD
+4110 Credit Interest Rebate Income,Income,Service/Fee Income,,,USD
+411030 (4810) Commission Revenue,Income,Service/Fee Income,,,USD
+4120 Customer Deposit Interest,Income,Other Primary Income,,,USD
+4130 Short Interest,Income,Sales of Product Income,,,USD
+413010 (4010) Order Flow Revenue-Equities,Income,Service/Fee Income,Order Flow Revenue-Equities,,USD
+413020 (4220) Fee Revenue - GoTrade,Income,Service/Fee Income,,,USD
+413030 (4300) Prop Trading G/L Realized,Income,Other Primary Income,,,USD
+413040 (4310) Prop Trading G/L Unrealized,Income,Service/Fee Income,,,USD
+413050 (4320) Prop Trading G/L Realized- Error Inventory,Income,Service/Fee Income,,,USD
+413060 (4325) Prop Trading G/L Unrealized- Error Inventory,Income,Service/Fee Income,,,USD
+413070 (4400) Dividend Income - Equity Inv,Income,Other Primary Income,,,USD
+4190 Security Deposit Interest,Income,Other Primary Income,,,USD
+4210 Commissions - GoTrade,Income,Service/Fee Income,,,USD
+421020 (7105) Interest Earned,Income,Other Primary Income,,,USD
+421040 - Partner Interest On Cash Expense,Income,Sales of Product Income,,,USD
+422010 (4100) Margin Interest,Income,Sales of Product Income,,,USD
+422020 (4105) Margin Interest Expense,Income,Sales of Product Income,,,USD
+422020 - Margin Interest Expense,Income,Sales of Product Income,,,USD
+423010 (4560) Just In Time Funding Interest Revenue,Income,Service/Fee Income,,,USD
+424020 - BMO Line of Credit Interest Expense,Income,Sales of Product Income,,,USD
+432020 (4620) Logo API,Income,Service/Fee Income,,,USD
+432030 (4963) Fundamental Data API,Income,Other Primary Income,,,USD
+432040 (4965) News API,Income,Other Primary Income,,,USD
+433010 (4425) ACH Service Fee Revenue,Income,Service/Fee Income,,,USD
+433020 (4450) ACAT Service Fees,Income,Service/Fee Income,,,USD
+433030 (4455) Wire Service Fee,Income,Service/Fee Income,,,USD
+433040 (4500) REG TAF Fee Revenue,Income,Service/Fee Income,,,USD
+433050 (4550) Rapyd Service Fee Revenue,Income,Service/Fee Income,,,USD
+433060 (4555) CurrencyCloud Service Fee,Income,Service/Fee Income,,,USD
+433070 (4570) Project Management fees,Income,Service/Fee Income,,,USD
+433080 (4600) Activation Fees,Income,Sales of Product Income,,,USD
+433090 (4700) Algo Execution Fees,Income,Sales of Product Income,,,USD
+433100 (4780) JIT Monthly Fee,Income,Service/Fee Income,,,USD
+433110 (4800) Stock Borrow Fee Income,Income,Service/Fee Income,,,USD
+433130 (4456) Credit Memo Fee,Income,Service/Fee Income,,,USD
+433140 (4610) Market Data Subscription,Income,Service/Fee Income,,,USD
+433150 (4790) IRA Fee,Income,Service/Fee Income,,,USD
+433160 (4900) FX Spread Revenue,Income,Service/Fee Income,,,USD
+433170 (4910) Custodial Fees,Income,Service/Fee Income,,,USD
+433180 (4920) SEC Fees,Income,Service/Fee Income,,,USD
+433190 (4930) FINRA Fees,Income,Service/Fee Income,,,USD
+433200 (4940) Product Integration,Income,Other Primary Income,,,USD
+433210 (4960) Service Tier,Income,Other Primary Income,,,USD
+433220 (4961) Service Level,Income,Other Primary Income,,,USD
+433230 (4962) White Labeling,Income,Other Primary Income,,,USD
+433270 (4966) Simulated / Paper Money Trading Accounts,Income,Other Primary Income,,,USD
+433280 (4967) Minimum Notional Trade,Income,Other Primary Income,,,USD
+433290 (4968) Media Review Service,Income,Other Primary Income,,,USD
+433300 (4969) KYC Service,Income,Service/Fee Income,,,USD
+433340 ADR Fees,Income,Service/Fee Income,,,USD
+433350 Account Conversion Fee,Income,Other Primary Income,,,USD
+433360 Account Fees,Income,Other Primary Income,,,USD
+433370 Trading Fees,Income,Other Primary Income,,,USD
+433380 Monthly Minimum Fees,Income,Other Primary Income,,,USD
+4991 Other Revenue,Income,Other Primary Income,,,USD
+4999 Uncategorized Income,Income,Sales of Product Income,,,USD
+643010 (4335) Fx Unrealized Gain/Loss,Income,Service/Fee Income,,,USD
+644020 (4330) Fx Realized Gain/Loss,Income,Service/Fee Income,,,USD
+Billable Expense Income,Income,Sales of Product Income,,,USD
+Sales of Product Income,Income,Sales of Product Income,,,USD
+test income account,Income,Other Primary Income,,,USD
+Unapplied Cash Payment Income,Income,Unapplied Cash Payment Income,,,USD
+5000 Clearing and Execution,Cost of Goods Sold,Supplies & Materials - COGS,,,USD
+5000 Clearing and Execution:5015 Customer Onboarding Expenses,Cost of Goods Sold,Other Costs of Services - COS,,,USD
+5000 Clearing and Execution:5080 REG Fee Expense,Cost of Goods Sold,Other Costs of Services - COS,,,USD
+5000 Clearing and Execution:511030 (5010) Clearing Fees,Cost of Goods Sold,Other Costs of Services - COS,Clearing Fees,,USD
+5000 Clearing and Execution:511040 (5090) Other Clearing Costs,Cost of Goods Sold,Other Costs of Services - COS,Other Clearing Costs,,USD
+5000 Clearing and Execution:511050 Stock Borrow Fees,Cost of Goods Sold,Supplies & Materials - COGS,,,USD
+5000 Clearing and Execution:512010 (5025) Customer Verification Charges,Cost of Goods Sold,Other Costs of Services - COS,,,USD
+5000 Clearing and Execution:513010 (5030) Execution Fees,Cost of Goods Sold,Other Costs of Services - COS,Execution Fees,,USD
+5000 Clearing and Execution:514020 - Partner Revenue Share PFoF,Cost of Goods Sold,Supplies & Materials - COGS,,,USD
+5000 Clearing and Execution:521010 (5020) Customer Support Expense,Cost of Goods Sold,Other Costs of Services - COS,,,USD
+Cost of Goods Sold,Cost of Goods Sold,Supplies & Materials - COGS,,,USD
+422020 (7005) Interest Paid,Expenses,Interest Paid,"Interest paid on loans, credit cards, and business vehicles",,USD
+6100 Regulatory,Expenses,Other Business Expenses,,,USD
+6100 Regulatory:516010 (6110) Regulatory Fees,Expenses,Office/General Administrative Expenses,Regulatory Fees,,USD
+614010 (6360) Taxes and Licenses,Expenses,Travel,,,USD
+6200 Office and Occupancy,Expenses,Rent or Lease of Buildings,,,USD
+6200 Office and Occupancy:532010 (6210) Rent & Lease,Expenses,Rent or Lease of Buildings,"Office space, storage, vehicle, machinery, and equipment rentals and leases (short or long-term)",,USD
+6300 General & Administrative,Expenses,Office/General Administrative Expenses,"Other expenses for your business, including training and conferences",,USD
+6300 General & Administrative:515010 (6305) Management Fees paid to Affiliates,Expenses,Office/General Administrative Expenses,Management Fees paid to Affiliates,,USD
+6300 General & Administrative:517010 (6315) Bank Charges & Fees,Expenses,Bank Charges,Fees or charges from your bank or credit card,,USD
+6300 General & Administrative:517010 (6362) Customer Reimbursements,Expenses,Other Business Expenses,,,USD
+6300 General & Administrative:517010 - Bank Fees,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:518010 (6370) Omni Admin Rev/Exp,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:518110 (6380) Trade Errors,Expenses,Other Business Expenses,Trade Errors,,USD
+6300 General & Administrative:518110 (6390) Technology Errors,Expenses,Other Business Expenses,6390,,USD
+6300 General & Administrative:518110 - Technology Errors,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:519020 (6375) Conversion Expense,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:519020 (6386) P&S Street Write-off,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:522020 (6385) Write-offs,Expenses,Other Business Expenses,,,USD
+"6300 General & Administrative:531100 (6367) Education, Training and Seminars",Expenses,Other Business Expenses,,,USD
+6300 General & Administrative:613010 (6330) Business Insurance,Expenses,Insurance,"Liability, fire, theft, and other insurance for your business (not health)",,USD
+6300 General & Administrative:614010 (6360) Taxes & Licenses,Expenses,Taxes Paid,"Property and business taxes, licenses, memberships, and permits (not sales tax)",,USD
+6300 General & Administrative:614010 - Taxes & Licenses,Expenses,Office/General Administrative Expenses,,,USD
+6300 General & Administrative:615010 (6365) Dues and Membership Fees,Expenses,Other Business Expenses,,,USD
+6300 General & Administrative:615020 (6340) Office Supplies,Expenses,Office/General Administrative Expenses,"Office, kitchen, and bathroom supplies, including software under $2,500",,USD
+6300 General & Administrative:615030 (6350) Postage and Shipping,Expenses,"Shipping, Freight & Delivery",,,USD
+6300 General & Administrative:615040 (6310) Administrative Expenses,Expenses,Office/General Administrative Expenses,Administrative Expenses,,USD
+"6400 Technology, Data and Communications",Expenses,Utilities,,,USD
+"6400 Technology, Data and Communications:519110 (6470) Market Data Expense",Expenses,Other Miscellaneous Service Cost,Market Data Expense,,USD
+"6400 Technology, Data and Communications:519110 (6480) Information Archiving",Expenses,Office/General Administrative Expenses,Information Archiving,,USD
+"6400 Technology, Data and Communications:519110 (6485) Information Sharing",Expenses,Other Business Expenses,,,USD
+"6400 Technology, Data and Communications:519110 (6490) Usage Charge - Subscription",Expenses,Other Business Expenses,,,USD
+"6400 Technology, Data and Communications:519110 - Usages Charges",Expenses,Utilities,,,USD
+"6400 Technology, Data and Communications:521020 (6475) Customer Authentication Expenses",Expenses,Utilities,Customer Authentication Expenses,,USD
+6600 Professional Fees,Expenses,Legal & Professional Fees,"Professional services including legal, financial, accounting, and payroll",,USD
+6600 Professional Fees:611010 (6620) Legal Fees,Expenses,Legal & Professional Fees,Legal Fees,,USD
+6600 Professional Fees:611020 (6621) Legal Fees - Litigation,Expenses,Legal & Professional Fees,,,USD
+6600 Professional Fees:611030 (6622) Legal Fees - Insurance,Expenses,Legal & Professional Fees,,,USD
+6600 Professional Fees:611040 (6623) Legal Fees - Settlement,Expenses,Legal & Professional Fees,,,USD
+6600 Professional Fees:616010 (6690) Other Professional Fees,Expenses,Legal & Professional Fees,,,USD
+6600 Professional Fees:616020 (6605) Accounting Fees,Expenses,Legal & Professional Fees,Accounting Fees,,USD
+6600 Professional Fees:616030 (6606) Audit Fees,Expenses,Legal & Professional Fees,Audit Fees,,USD
+6700 Advertising & Marketing,Expenses,Advertising/Promotional,,,USD
+6700 Advertising & Marketing:631010 (6710) Advertising,Expenses,Advertising/Promotional,"Ads, business cards, and other marketing costs",,USD
+6700 Advertising & Marketing:631030 (6720) Promotional Expense-Cash Rewards Program,Expenses,Advertising/Promotional,,,USD
+6800 Travel and Entertainment,Expenses,Travel,,,USD
+6800 Travel and Entertainment:617030 (6850) Travel,Expenses,Travel,"Business travel including transportation, hotels, and tips (not meals)",,USD
+6800 Travel and Entertainment:617040 (6830) Meals & Entertainment,Expenses,Entertainment Meals,Client meals and entertainment and travel meals (business-related only),,USD
+Purchases,Expenses,Supplies & Materials,,,USD
+Unapplied Cash Bill Payment Expense,Expenses,Unapplied Cash Bill Payment Expense,,,USD
+Uncategorized Expense,Expenses,Other Miscellaneous Service Cost,,,USD
+522010 Provision for client unsecured debits,Other Expense,Other Miscellaneous Expense,,,USD
+522030 (6910) Provision for Bad Debt Expense,Other Expense,Other Miscellaneous Expense,,,USD
+522040 Partner Write-Offs,Other Expense,Other Miscellaneous Expense,,,USD
+Exchange Gain or Loss,Other Expense,Exchange Gain or Loss,,,USD
+Reconciliation Discrepancies,Other Expense,Other Miscellaneous Expense,,,USD

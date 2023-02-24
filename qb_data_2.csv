@@ -1,0 +1,3 @@
+Account,Type,Detail type,PostingType,Description,Balance,Currency
+Utilities,Expense,Checking,Debit,Test this description,99,USD
+Utilities,Expense,Checking,Credit,SVB Checking #7899,99,USD

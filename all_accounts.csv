@@ -1,0 +1,161 @@
+,AccountSubType,AccountType,AcctNum,Active,Classification,CurrencyRef,CurrentBalance,CurrentBalanceWithSubAccounts,Description,FullyQualifiedName,Id,MetaData,Name,SubAccount,SyncToken,domain,sparse
+name,AdvertisingPromotional,Expense,,True,Expense,United States Dollar,0,0,,Advertising,97,,Advertising,False,0,QBO,False
+type,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Advertising,97,,Advertising,False,0,QBO,False
+value,AdvertisingPromotional,Expense,,True,Expense,USD,0,0,,Advertising,97,,Advertising,False,0,QBO,False
+CreateTime,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Advertising,97,2023-02-24T03:01:51-08:00,Advertising,False,0,QBO,False
+LastUpdatedTime,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Advertising,97,2023-02-24T03:01:51-08:00,Advertising,False,0,QBO,False
+name,BankCharges,Expense,,True,Expense,United States Dollar,0,0,,Bank Charges,98,,Bank Charges,False,0,QBO,False
+type,BankCharges,Expense,,True,Expense,,0,0,,Bank Charges,98,,Bank Charges,False,0,QBO,False
+value,BankCharges,Expense,,True,Expense,USD,0,0,,Bank Charges,98,,Bank Charges,False,0,QBO,False
+CreateTime,BankCharges,Expense,,True,Expense,,0,0,,Bank Charges,98,2023-02-24T03:01:51-08:00,Bank Charges,False,0,QBO,False
+LastUpdatedTime,BankCharges,Expense,,True,Expense,,0,0,,Bank Charges,98,2023-02-24T03:01:51-08:00,Bank Charges,False,0,QBO,False
+name,OtherMiscellaneousServiceCost,Expense,,True,Expense,United States Dollar,0,0,,Commissions & fees,99,,Commissions & fees,False,0,QBO,False
+type,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Commissions & fees,99,,Commissions & fees,False,0,QBO,False
+value,OtherMiscellaneousServiceCost,Expense,,True,Expense,USD,0,0,,Commissions & fees,99,,Commissions & fees,False,0,QBO,False
+CreateTime,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Commissions & fees,99,2023-02-24T03:01:51-08:00,Commissions & fees,False,0,QBO,False
+LastUpdatedTime,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Commissions & fees,99,2023-02-24T03:01:51-08:00,Commissions & fees,False,0,QBO,False
+name,DiscountsRefundsGiven,Income,,True,Revenue,United States Dollar,0,0,,Discounts,93,,Discounts,False,0,QBO,False
+type,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Discounts,93,,Discounts,False,0,QBO,False
+value,DiscountsRefundsGiven,Income,,True,Revenue,USD,0,0,,Discounts,93,,Discounts,False,0,QBO,False
+CreateTime,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Discounts,93,2023-02-24T03:01:51-08:00,Discounts,False,0,QBO,False
+LastUpdatedTime,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Discounts,93,2023-02-24T03:01:51-08:00,Discounts,False,0,QBO,False
+name,OtherMiscellaneousServiceCost,Expense,,True,Expense,United States Dollar,0,0,,Disposal Fees,120,,Disposal Fees,False,0,QBO,False
+type,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Disposal Fees,120,,Disposal Fees,False,0,QBO,False
+value,OtherMiscellaneousServiceCost,Expense,,True,Expense,USD,0,0,,Disposal Fees,120,,Disposal Fees,False,0,QBO,False
+CreateTime,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Disposal Fees,120,2023-02-24T03:01:52-08:00,Disposal Fees,False,0,QBO,False
+LastUpdatedTime,OtherMiscellaneousServiceCost,Expense,,True,Expense,,0,0,,Disposal Fees,120,2023-02-24T03:01:52-08:00,Disposal Fees,False,0,QBO,False
+name,DuesSubscriptions,Expense,,True,Expense,United States Dollar,0,0,,Dues & Subscriptions,100,,Dues & Subscriptions,False,0,QBO,False
+type,DuesSubscriptions,Expense,,True,Expense,,0,0,,Dues & Subscriptions,100,,Dues & Subscriptions,False,0,QBO,False
+value,DuesSubscriptions,Expense,,True,Expense,USD,0,0,,Dues & Subscriptions,100,,Dues & Subscriptions,False,0,QBO,False
+CreateTime,DuesSubscriptions,Expense,,True,Expense,,0,0,,Dues & Subscriptions,100,2023-02-24T03:01:51-08:00,Dues & Subscriptions,False,0,QBO,False
+LastUpdatedTime,DuesSubscriptions,Expense,,True,Expense,,0,0,,Dues & Subscriptions,100,2023-02-24T03:01:51-08:00,Dues & Subscriptions,False,0,QBO,False
+name,SalesOfProductIncome,Income,,True,Revenue,United States Dollar,0,0,,Gross Receipts,94,,Gross Receipts,False,0,QBO,False
+type,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Gross Receipts,94,,Gross Receipts,False,0,QBO,False
+value,SalesOfProductIncome,Income,,True,Revenue,USD,0,0,,Gross Receipts,94,,Gross Receipts,False,0,QBO,False
+CreateTime,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Gross Receipts,94,2023-02-24T03:01:51-08:00,Gross Receipts,False,0,QBO,False
+LastUpdatedTime,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Gross Receipts,94,2023-02-24T03:01:51-08:00,Gross Receipts,False,0,QBO,False
+name,Insurance,Expense,,True,Expense,United States Dollar,0,0,,Insurance,101,,Insurance,False,0,QBO,False
+type,Insurance,Expense,,True,Expense,,0,0,,Insurance,101,,Insurance,False,0,QBO,False
+value,Insurance,Expense,,True,Expense,USD,0,0,,Insurance,101,,Insurance,False,0,QBO,False
+CreateTime,Insurance,Expense,,True,Expense,,0,0,,Insurance,101,2023-02-24T03:01:52-08:00,Insurance,False,0,QBO,False
+LastUpdatedTime,Insurance,Expense,,True,Expense,,0,0,,Insurance,101,2023-02-24T03:01:52-08:00,Insurance,False,0,QBO,False
+name,Insurance,Expense,,True,Expense,United States Dollar,0,0,,Insurance - Liability,118,,Insurance - Liability,False,0,QBO,False
+type,Insurance,Expense,,True,Expense,,0,0,,Insurance - Liability,118,,Insurance - Liability,False,0,QBO,False
+value,Insurance,Expense,,True,Expense,USD,0,0,,Insurance - Liability,118,,Insurance - Liability,False,0,QBO,False
+CreateTime,Insurance,Expense,,True,Expense,,0,0,,Insurance - Liability,118,2023-02-24T03:01:52-08:00,Insurance - Liability,False,0,QBO,False
+LastUpdatedTime,Insurance,Expense,,True,Expense,,0,0,,Insurance - Liability,118,2023-02-24T03:01:52-08:00,Insurance - Liability,False,0,QBO,False
+name,InterestEarned,Other Income,,True,Revenue,United States Dollar,0,0,,Interest Earned,115,,Interest Earned,False,0,QBO,False
+type,InterestEarned,Other Income,,True,Revenue,,0,0,,Interest Earned,115,,Interest Earned,False,0,QBO,False
+value,InterestEarned,Other Income,,True,Revenue,USD,0,0,,Interest Earned,115,,Interest Earned,False,0,QBO,False
+CreateTime,InterestEarned,Other Income,,True,Revenue,,0,0,,Interest Earned,115,2023-02-24T03:01:52-08:00,Interest Earned,False,0,QBO,False
+LastUpdatedTime,InterestEarned,Other Income,,True,Revenue,,0,0,,Interest Earned,115,2023-02-24T03:01:52-08:00,Interest Earned,False,0,QBO,False
+name,LegalProfessionalFees,Expense,,True,Expense,United States Dollar,0,0,,Legal & Professional Fees,102,,Legal & Professional Fees,False,0,QBO,False
+type,LegalProfessionalFees,Expense,,True,Expense,,0,0,,Legal & Professional Fees,102,,Legal & Professional Fees,False,0,QBO,False
+value,LegalProfessionalFees,Expense,,True,Expense,USD,0,0,,Legal & Professional Fees,102,,Legal & Professional Fees,False,0,QBO,False
+CreateTime,LegalProfessionalFees,Expense,,True,Expense,,0,0,,Legal & Professional Fees,102,2023-02-24T03:01:52-08:00,Legal & Professional Fees,False,0,QBO,False
+LastUpdatedTime,LegalProfessionalFees,Expense,,True,Expense,,0,0,,Legal & Professional Fees,102,2023-02-24T03:01:52-08:00,Legal & Professional Fees,False,0,QBO,False
+name,EntertainmentMeals,Expense,,True,Expense,United States Dollar,0,0,,Meals and Entertainment,103,,Meals and Entertainment,False,0,QBO,False
+type,EntertainmentMeals,Expense,,True,Expense,,0,0,,Meals and Entertainment,103,,Meals and Entertainment,False,0,QBO,False
+value,EntertainmentMeals,Expense,,True,Expense,USD,0,0,,Meals and Entertainment,103,,Meals and Entertainment,False,0,QBO,False
+CreateTime,EntertainmentMeals,Expense,,True,Expense,,0,0,,Meals and Entertainment,103,2023-02-24T03:01:52-08:00,Meals and Entertainment,False,0,QBO,False
+LastUpdatedTime,EntertainmentMeals,Expense,,True,Expense,,0,0,,Meals and Entertainment,103,2023-02-24T03:01:52-08:00,Meals and Entertainment,False,0,QBO,False
+name,OtherMiscellaneousExpense,Other Expense,,True,Expense,United States Dollar,0,0,,Miscellaneous,104,,Miscellaneous,False,0,QBO,False
+type,OtherMiscellaneousExpense,Other Expense,,True,Expense,,0,0,,Miscellaneous,104,,Miscellaneous,False,0,QBO,False
+value,OtherMiscellaneousExpense,Other Expense,,True,Expense,USD,0,0,,Miscellaneous,104,,Miscellaneous,False,0,QBO,False
+CreateTime,OtherMiscellaneousExpense,Other Expense,,True,Expense,,0,0,,Miscellaneous,104,2023-02-24T03:01:52-08:00,Miscellaneous,False,0,QBO,False
+LastUpdatedTime,OtherMiscellaneousExpense,Other Expense,,True,Expense,,0,0,,Miscellaneous,104,2023-02-24T03:01:52-08:00,Miscellaneous,False,0,QBO,False
+name,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,United States Dollar,0,0,,Office Expenses,105,,Office Expenses,False,0,QBO,False
+type,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Office Expenses,105,,Office Expenses,False,0,QBO,False
+value,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,USD,0,0,,Office Expenses,105,,Office Expenses,False,0,QBO,False
+CreateTime,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Office Expenses,105,2023-02-24T03:01:52-08:00,Office Expenses,False,0,QBO,False
+LastUpdatedTime,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Office Expenses,105,2023-02-24T03:01:52-08:00,Office Expenses,False,0,QBO,False
+name,OtherMiscellaneousIncome,Other Income,,True,Revenue,United States Dollar,0,0,,Other Portfolio Income,116,,Other Portfolio Income,False,0,QBO,False
+type,OtherMiscellaneousIncome,Other Income,,True,Revenue,,0,0,,Other Portfolio Income,116,,Other Portfolio Income,False,0,QBO,False
+value,OtherMiscellaneousIncome,Other Income,,True,Revenue,USD,0,0,,Other Portfolio Income,116,,Other Portfolio Income,False,0,QBO,False
+CreateTime,OtherMiscellaneousIncome,Other Income,,True,Revenue,,0,0,,Other Portfolio Income,116,2023-02-24T03:01:52-08:00,Other Portfolio Income,False,0,QBO,False
+LastUpdatedTime,OtherMiscellaneousIncome,Other Income,,True,Revenue,,0,0,,Other Portfolio Income,116,2023-02-24T03:01:52-08:00,Other Portfolio Income,False,0,QBO,False
+name,PenaltiesSettlements,Other Expense,,True,Expense,United States Dollar,0,0,,Penalties & Settlements,117,,Penalties & Settlements,False,0,QBO,False
+type,PenaltiesSettlements,Other Expense,,True,Expense,,0,0,,Penalties & Settlements,117,,Penalties & Settlements,False,0,QBO,False
+value,PenaltiesSettlements,Other Expense,,True,Expense,USD,0,0,,Penalties & Settlements,117,,Penalties & Settlements,False,0,QBO,False
+CreateTime,PenaltiesSettlements,Other Expense,,True,Expense,,0,0,,Penalties & Settlements,117,2023-02-24T03:01:52-08:00,Penalties & Settlements,False,0,QBO,False
+LastUpdatedTime,PenaltiesSettlements,Other Expense,,True,Expense,,0,0,,Penalties & Settlements,117,2023-02-24T03:01:52-08:00,Penalties & Settlements,False,0,QBO,False
+name,PrepaidExpenses,Other Current Asset,,True,Asset,United States Dollar,0,0,,Prepaid Expenses,91,,Prepaid Expenses,False,0,QBO,False
+type,PrepaidExpenses,Other Current Asset,,True,Asset,,0,0,,Prepaid Expenses,91,,Prepaid Expenses,False,0,QBO,False
+value,PrepaidExpenses,Other Current Asset,,True,Asset,USD,0,0,,Prepaid Expenses,91,,Prepaid Expenses,False,0,QBO,False
+CreateTime,PrepaidExpenses,Other Current Asset,,True,Asset,,0,0,,Prepaid Expenses,91,2023-02-24T03:01:51-08:00,Prepaid Expenses,False,0,QBO,False
+LastUpdatedTime,PrepaidExpenses,Other Current Asset,,True,Asset,,0,0,,Prepaid Expenses,91,2023-02-24T03:01:51-08:00,Prepaid Expenses,False,0,QBO,False
+name,AdvertisingPromotional,Expense,,True,Expense,United States Dollar,0,0,,Promotional,106,,Promotional,False,0,QBO,False
+type,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Promotional,106,,Promotional,False,0,QBO,False
+value,AdvertisingPromotional,Expense,,True,Expense,USD,0,0,,Promotional,106,,Promotional,False,0,QBO,False
+CreateTime,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Promotional,106,2023-02-24T03:01:52-08:00,Promotional,False,0,QBO,False
+LastUpdatedTime,AdvertisingPromotional,Expense,,True,Expense,,0,0,,Promotional,106,2023-02-24T03:01:52-08:00,Promotional,False,0,QBO,False
+name,DiscountsRefundsGiven,Income,,True,Revenue,United States Dollar,0,0,,Refunds-Allowances,95,,Refunds-Allowances,False,0,QBO,False
+type,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Refunds-Allowances,95,,Refunds-Allowances,False,0,QBO,False
+value,DiscountsRefundsGiven,Income,,True,Revenue,USD,0,0,,Refunds-Allowances,95,,Refunds-Allowances,False,0,QBO,False
+CreateTime,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Refunds-Allowances,95,2023-02-24T03:01:51-08:00,Refunds-Allowances,False,0,QBO,False
+LastUpdatedTime,DiscountsRefundsGiven,Income,,True,Revenue,,0,0,,Refunds-Allowances,95,2023-02-24T03:01:51-08:00,Refunds-Allowances,False,0,QBO,False
+name,RentOrLeaseOfBuildings,Expense,,True,Expense,United States Dollar,0,0,,Rent or Lease,107,,Rent or Lease,False,0,QBO,False
+type,RentOrLeaseOfBuildings,Expense,,True,Expense,,0,0,,Rent or Lease,107,,Rent or Lease,False,0,QBO,False
+value,RentOrLeaseOfBuildings,Expense,,True,Expense,USD,0,0,,Rent or Lease,107,,Rent or Lease,False,0,QBO,False
+CreateTime,RentOrLeaseOfBuildings,Expense,,True,Expense,,0,0,,Rent or Lease,107,2023-02-24T03:01:52-08:00,Rent or Lease,False,0,QBO,False
+LastUpdatedTime,RentOrLeaseOfBuildings,Expense,,True,Expense,,0,0,,Rent or Lease,107,2023-02-24T03:01:52-08:00,Rent or Lease,False,0,QBO,False
+name,RepairMaintenance,Expense,,True,Expense,United States Dollar,0,0,,Repair & Maintenance,108,,Repair & Maintenance,False,0,QBO,False
+type,RepairMaintenance,Expense,,True,Expense,,0,0,,Repair & Maintenance,108,,Repair & Maintenance,False,0,QBO,False
+value,RepairMaintenance,Expense,,True,Expense,USD,0,0,,Repair & Maintenance,108,,Repair & Maintenance,False,0,QBO,False
+CreateTime,RepairMaintenance,Expense,,True,Expense,,0,0,,Repair & Maintenance,108,2023-02-24T03:01:52-08:00,Repair & Maintenance,False,0,QBO,False
+LastUpdatedTime,RepairMaintenance,Expense,,True,Expense,,0,0,,Repair & Maintenance,108,2023-02-24T03:01:52-08:00,Repair & Maintenance,False,0,QBO,False
+name,RetainedEarnings,Equity,,True,Equity,United States Dollar,0,0,,Retained Earnings,122,,Retained Earnings,False,0,QBO,False
+type,RetainedEarnings,Equity,,True,Equity,,0,0,,Retained Earnings,122,,Retained Earnings,False,0,QBO,False
+value,RetainedEarnings,Equity,,True,Equity,USD,0,0,,Retained Earnings,122,,Retained Earnings,False,0,QBO,False
+CreateTime,RetainedEarnings,Equity,,True,Equity,,0,0,,Retained Earnings,122,2023-02-24T03:01:52-08:00,Retained Earnings,False,0,QBO,False
+LastUpdatedTime,RetainedEarnings,Equity,,True,Equity,,0,0,,Retained Earnings,122,2023-02-24T03:01:52-08:00,Retained Earnings,False,0,QBO,False
+name,SalesOfProductIncome,Income,,True,Revenue,United States Dollar,0,0,,Sales,96,,Sales,False,0,QBO,False
+type,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Sales,96,,Sales,False,0,QBO,False
+value,SalesOfProductIncome,Income,,True,Revenue,USD,0,0,,Sales,96,,Sales,False,0,QBO,False
+CreateTime,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Sales,96,2023-02-24T03:01:51-08:00,Sales,False,0,QBO,False
+LastUpdatedTime,SalesOfProductIncome,Income,,True,Revenue,,0,0,,Sales,96,2023-02-24T03:01:51-08:00,Sales,False,0,QBO,False
+name,ServiceFeeIncome,Income,,True,Revenue,United States Dollar,0,0,,Services,121,,Services,False,0,QBO,False
+type,ServiceFeeIncome,Income,,True,Revenue,,0,0,,Services,121,,Services,False,0,QBO,False
+value,ServiceFeeIncome,Income,,True,Revenue,USD,0,0,,Services,121,,Services,False,0,QBO,False
+CreateTime,ServiceFeeIncome,Income,,True,Revenue,,0,0,,Services,121,2023-02-24T03:01:52-08:00,Services,False,0,QBO,False
+LastUpdatedTime,ServiceFeeIncome,Income,,True,Revenue,,0,0,,Services,121,2023-02-24T03:01:52-08:00,Services,False,0,QBO,False
+name,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,United States Dollar,0,0,,Stationery & Printing,109,,Stationery & Printing,False,0,QBO,False
+type,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Stationery & Printing,109,,Stationery & Printing,False,0,QBO,False
+value,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,USD,0,0,,Stationery & Printing,109,,Stationery & Printing,False,0,QBO,False
+CreateTime,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Stationery & Printing,109,2023-02-24T03:01:52-08:00,Stationery & Printing,False,0,QBO,False
+LastUpdatedTime,OfficeGeneralAdministrativeExpenses,Expense,,True,Expense,,0,0,,Stationery & Printing,109,2023-02-24T03:01:52-08:00,Stationery & Printing,False,0,QBO,False
+name,SuppliesMaterials,Expense,,True,Expense,United States Dollar,0,0,,Supplies,110,,Supplies,False,0,QBO,False
+type,SuppliesMaterials,Expense,,True,Expense,,0,0,,Supplies,110,,Supplies,False,0,QBO,False
+value,SuppliesMaterials,Expense,,True,Expense,USD,0,0,,Supplies,110,,Supplies,False,0,QBO,False
+CreateTime,SuppliesMaterials,Expense,,True,Expense,,0,0,,Supplies,110,2023-02-24T03:01:52-08:00,Supplies,False,0,QBO,False
+LastUpdatedTime,SuppliesMaterials,Expense,,True,Expense,,0,0,,Supplies,110,2023-02-24T03:01:52-08:00,Supplies,False,0,QBO,False
+name,TaxesPaid,Expense,,True,Expense,United States Dollar,0,0,,Taxes & Licenses,111,,Taxes & Licenses,False,0,QBO,False
+type,TaxesPaid,Expense,,True,Expense,,0,0,,Taxes & Licenses,111,,Taxes & Licenses,False,0,QBO,False
+value,TaxesPaid,Expense,,True,Expense,USD,0,0,,Taxes & Licenses,111,,Taxes & Licenses,False,0,QBO,False
+CreateTime,TaxesPaid,Expense,,True,Expense,,0,0,,Taxes & Licenses,111,2023-02-24T03:01:52-08:00,Taxes & Licenses,False,0,QBO,False
+LastUpdatedTime,TaxesPaid,Expense,,True,Expense,,0,0,,Taxes & Licenses,111,2023-02-24T03:01:52-08:00,Taxes & Licenses,False,0,QBO,False
+name,SuppliesMaterials,Expense,,True,Expense,United States Dollar,0,0,,Tools,119,,Tools,False,0,QBO,False
+type,SuppliesMaterials,Expense,,True,Expense,,0,0,,Tools,119,,Tools,False,0,QBO,False
+value,SuppliesMaterials,Expense,,True,Expense,USD,0,0,,Tools,119,,Tools,False,0,QBO,False
+CreateTime,SuppliesMaterials,Expense,,True,Expense,,0,0,,Tools,119,2023-02-24T03:01:52-08:00,Tools,False,0,QBO,False
+LastUpdatedTime,SuppliesMaterials,Expense,,True,Expense,,0,0,,Tools,119,2023-02-24T03:01:52-08:00,Tools,False,0,QBO,False
+name,Travel,Expense,,True,Expense,United States Dollar,0,0,,Travel,112,,Travel,False,0,QBO,False
+type,Travel,Expense,,True,Expense,,0,0,,Travel,112,,Travel,False,0,QBO,False
+value,Travel,Expense,,True,Expense,USD,0,0,,Travel,112,,Travel,False,0,QBO,False
+CreateTime,Travel,Expense,,True,Expense,,0,0,,Travel,112,2023-02-24T03:01:52-08:00,Travel,False,0,QBO,False
+LastUpdatedTime,Travel,Expense,,True,Expense,,0,0,,Travel,112,2023-02-24T03:01:52-08:00,Travel,False,0,QBO,False
+name,TravelMeals,Expense,,True,Expense,United States Dollar,0,0,,Travel Meals,113,,Travel Meals,False,0,QBO,False
+type,TravelMeals,Expense,,True,Expense,,0,0,,Travel Meals,113,,Travel Meals,False,0,QBO,False
+value,TravelMeals,Expense,,True,Expense,USD,0,0,,Travel Meals,113,,Travel Meals,False,0,QBO,False
+CreateTime,TravelMeals,Expense,,True,Expense,,0,0,,Travel Meals,113,2023-02-24T03:01:52-08:00,Travel Meals,False,0,QBO,False
+LastUpdatedTime,TravelMeals,Expense,,True,Expense,,0,0,,Travel Meals,113,2023-02-24T03:01:52-08:00,Travel Meals,False,0,QBO,False
+name,UndepositedFunds,Other Current Asset,,True,Asset,United States Dollar,0,0,,Undeposited Funds,92,,Undeposited Funds,False,0,QBO,False
+type,UndepositedFunds,Other Current Asset,,True,Asset,,0,0,,Undeposited Funds,92,,Undeposited Funds,False,0,QBO,False
+value,UndepositedFunds,Other Current Asset,,True,Asset,USD,0,0,,Undeposited Funds,92,,Undeposited Funds,False,0,QBO,False
+CreateTime,UndepositedFunds,Other Current Asset,,True,Asset,,0,0,,Undeposited Funds,92,2023-02-24T03:01:51-08:00,Undeposited Funds,False,0,QBO,False
+LastUpdatedTime,UndepositedFunds,Other Current Asset,,True,Asset,,0,0,,Undeposited Funds,92,2023-02-24T03:01:51-08:00,Undeposited Funds,False,0,QBO,False
+name,Utilities,Expense,,True,Expense,United States Dollar,0,0,,Utilities,114,,Utilities,False,0,QBO,False
+type,Utilities,Expense,,True,Expense,,0,0,,Utilities,114,,Utilities,False,0,QBO,False
+value,Utilities,Expense,,True,Expense,USD,0,0,,Utilities,114,,Utilities,False,0,QBO,False
+CreateTime,Utilities,Expense,,True,Expense,,0,0,,Utilities,114,2023-02-24T03:01:52-08:00,Utilities,False,0,QBO,False
+LastUpdatedTime,Utilities,Expense,,True,Expense,,0,0,,Utilities,114,2023-02-24T03:01:52-08:00,Utilities,False,0,QBO,False
