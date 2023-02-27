@@ -38,7 +38,7 @@ journal_entry.Line = []
 
 
 for entry in range(0,len(df_upload)):
-    account_ref.name = df_upload['Account'].iloc[entry]
+    account_ref.name = df_upload['reference_no'].iloc[entry]
     account_ref.type = df_upload['Type'].iloc[entry]
 
     detail_one = JournalEntryLineDetail()
@@ -51,7 +51,7 @@ for entry in range(0,len(df_upload)):
     line_one.LineNum = 0
     line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
 
-    amount = df_upload['Balance'].iloc[entry]
+    amount = df_upload['balance'].iloc[entry]
 
     line_one.Amount = amount.astype(str)
 
