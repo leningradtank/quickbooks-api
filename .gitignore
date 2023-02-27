@@ -1,4 +1,4 @@
 #ignore files 
 *.env
-*.DS_Store
+.DS_Store
 *.csv
