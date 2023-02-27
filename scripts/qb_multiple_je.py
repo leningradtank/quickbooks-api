@@ -49,7 +49,7 @@ for entry in range(0,len(df_upload)):
     
     line_one.JournalEntryLineDetail = detail_one
     line_one.LineNum = 0
-    line_one.Description = df_upload['Description'].iloc[entry]
+    line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
 
     amount = df_upload['Balance'].iloc[entry]
 
