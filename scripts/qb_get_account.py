@@ -27,8 +27,9 @@ client = QuickBooks(
 df_upload = pd.read_csv('qb_data_2.csv')
 
 #get a specific account with a query 
-search_name = df_upload['Account'].iloc[1]
-accounts = Account.where("Name like '%{}'".format(search_name), qb=client)
+search_ref = df_upload['reference_no'].iloc[1]
+print(search_ref)
+accounts = Account.where("id = '{}'".format(search_ref), qb=client)
 
 for account in accounts:
         all = account.to_json()

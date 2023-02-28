@@ -3,7 +3,6 @@ from quickbooks import QuickBooks
 from quickbooks.objects.journalentry import JournalEntry, JournalEntryLine, JournalEntryLineDetail
 from quickbooks.objects.base import Ref
 from quickbooks.objects.account import Account
-# from quickbooks.objects.currency import Currency
 import requests
 import pandas as pd 
 import os
@@ -27,18 +26,19 @@ client = QuickBooks(
 
 df_upload = pd.read_csv('qb_data_2.csv')
 
-account_ref= Ref()
-account_ref.value = 114
-
-#decalre a list of journal entries
-
 journal_entry = JournalEntry()
 journal_entry.Line = []
-# validation for groupby and sum for account balance, calculate diff and should be zero.
-# sort values +ve and -ve, then iterate through debits, credits
 
+account_ref= Ref()
 
 for entry in range(0,len(df_upload)):
+    #get a specific account with a query 
+    search_ref = df_upload['reference_no'].iloc[entry]
+    print(search_ref)
+
+    accounts = Account.where("id = '{}'".format(search_ref), qb=client)
+    account_ref.value = search_ref
+
     account_ref.name = df_upload['reference_no'].iloc[entry]
     account_ref.type = df_upload['Type'].iloc[entry]
 
@@ -61,47 +61,3 @@ for entry in range(0,len(df_upload)):
     journal_entry.Line.append(line_one)
 
 journal_entry.save(qb=client)
-
-    
-
-    # journal_entry = JournalEntry()
-
-    # journal_entry.Line = [line_one, line_two]
-    # #append lines in the for loops in the list 
-
-    # journal_entry.save(qb=client)
-
-
-# for index, row in df_upload.iterrows():
-
-
-
-
-#     #detail two 
-#     detail_two = JournalEntryLineDetail()
-
-#     detail_two.PostingType = df_upload['PostingType'].iloc[index+1] #journal_input["Line"][0]['JournalEntryLine1']['JournalEntryLineDetail']['PostingType']
-#     detail_two.AccountRef = account_ref
-
-#     line_two = JournalEntryLine()
-
-#     line_two.JournalEntryLineDetail = detail_two
-#     line_two.LineNum = 1
-#     line_two.Description = df_upload['Description'].iloc[index+1]
-
-#     amount = df_upload['Balance'].iloc[index+1]
-
-#     line_two.Amount = amount.astype(str)
-
-#     line_two.DetailType = "JournalEntryLineDetail"
-
-#     journal_entry = JournalEntry()
-#     journal_entry.Line = [line_one, line_two]
-#     #append lines in the for loops in the list 
-
-#     journal_entry.save(qb=client)
-
-
-
-
-print("Task Finished")
