@@ -39,6 +39,8 @@ for entry in range(0,len(df_upload)):
     accounts = Account.where("id = '{}'".format(search_ref), qb=client)
     account_ref.value = search_ref
 
+
+    #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
     account_ref.name = df_upload['reference_no'].iloc[entry]
     account_ref.type = df_upload['Type'].iloc[entry]
 
