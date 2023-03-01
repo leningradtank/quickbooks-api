@@ -25,24 +25,29 @@ client = QuickBooks(
         company_id=os.getenv('company_id'),
     )
 
+
 df_upload = pd.read_csv('qb_data_2.csv')
 
 account_ref= Ref()
 account_ref.value = 114
 
-#decalre a list of journal entries
+#declare a list of journal entries
 
 journal_entry = JournalEntry()
 journal_entry.Line = []
+detail_one = JournalEntryLineDetail()
+
 # validation for groupby and sum for account balance, calculate diff and should be zero.
 # sort values +ve and -ve, then iterate through debits, credits
 
 
+     
 for entry in range(0,len(df_upload)):
+
     account_ref.name = df_upload['reference_no'].iloc[entry]
     account_ref.type = df_upload['Type'].iloc[entry]
 
-    detail_one = JournalEntryLineDetail()
+
     detail_one.PostingType = df_upload['PostingType'].iloc[entry]
     detail_one.AccountRef = account_ref
 
@@ -50,7 +55,8 @@ for entry in range(0,len(df_upload)):
     
     line_one.JournalEntryLineDetail = detail_one
     line_one.LineNum = 0
-    line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
+    line_one.Description = df_upload['Description'].iloc[entry]
+    # + df_upload['system_date'].iloc[entry]
 
     amount = df_upload['balance'].iloc[entry]
 
@@ -63,6 +69,7 @@ for entry in range(0,len(df_upload)):
 journal_entry.save(qb=client)
 
     
+
 
     # journal_entry = JournalEntry()
 
