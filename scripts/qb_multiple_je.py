@@ -47,14 +47,13 @@ for entry in range(0,len(df_upload)):
     account_ref.name = df_upload['reference_no'].iloc[entry]
     account_ref.type = df_upload['Type'].iloc[entry]
 
-
     detail_one.PostingType = df_upload['PostingType'].iloc[entry]
     detail_one.AccountRef = account_ref
 
     line_one = JournalEntryLine()
     
     line_one.JournalEntryLineDetail = detail_one
-    line_one.LineNum = 0
+    line_one.LineNum = entry
     line_one.Description = df_upload['Description'].iloc[entry]
     # + df_upload['system_date'].iloc[entry]
 

@@ -47,15 +47,17 @@ def upload():
     journal_entry = JournalEntry() #declare journal entry object
     journal_entry.Line = [] #empty list that will contain the journal entries for the day 
 
-    account_ref= Ref() #declare account reference object
-
+     #declare account reference object
+    account_ref= Ref()
 
     for entry in range(0,len(df_upload)):
         #get a specific account with a query 
-        search_ref = df_upload['reference_no'].iloc[entry] 
+        search_ref = 114
+        # df_upload['reference_no'].iloc[entry] 
         print(search_ref)
 
         accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
+        
         account_ref.value = search_ref
 
         #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
@@ -80,5 +82,6 @@ def upload():
         journal_entry.Line.append(line_one)
 
     journal_entry.save(qb=auth())
+    
 
 upload()
