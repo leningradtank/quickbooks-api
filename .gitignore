@@ -3,3 +3,4 @@
 .DS_Store
 *.csv
 *.qb_data.csv
+*google_sheets_read.py
