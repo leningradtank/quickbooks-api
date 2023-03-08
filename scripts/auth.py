@@ -12,7 +12,7 @@ redirect_uri='http://localhost:8000/callback'
 company_id=os.getenv('company_id')
 
 scopes = [
-    Scopes.ACCOUNTING,
+    Scopes.ACCOUNTING
 ]
 
 auth_client = AuthClient(client_id, client_secret, redirect_uri, environment )

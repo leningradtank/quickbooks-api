@@ -11,6 +11,15 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+sheet_id = os.getenv('SHEET_ID')
+sheet_name = os.getenv('SHEET_NAME')
+
+def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
+    url= f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
+    df_reference = pd.read_csv(url, on_bad_lines='skip')
+
+    
+
 def auth():
     auth_client = AuthClient(
             client_id= os.getenv('client_id'),
