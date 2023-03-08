@@ -16,6 +16,7 @@ scopes = [
 ]
 
 auth_client = AuthClient(client_id, client_secret, redirect_uri, environment )
+print(auth_client)
 url = auth_client.get_authorization_url(scopes)
 
 print(url)
