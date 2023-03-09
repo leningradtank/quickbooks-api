@@ -38,10 +38,12 @@ def auth():
     return client
 
 def read_ledgie_data():
+    #to be changed and instead read from ledgie db 
     df_ledgie = pd.read_csv('ledgie_data.csv')
 
     delta = df_ledgie['tot_net_amt'].sum()
 
+    #check if the diff is 0 , as credits = debits
     if delta == 0:
         print('Delta is 0')
     else:

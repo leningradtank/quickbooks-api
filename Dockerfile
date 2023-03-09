@@ -18,7 +18,8 @@ RUN pip install \
     jsonschema \
     slack_sdk \
     intuitlib.client \
-    quickbooks 
+    quickbooks \
+    dash
 
 
 WORKDIR /scripts
