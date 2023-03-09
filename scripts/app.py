@@ -1,5 +1,5 @@
 import pandas as pd
-from dash import Dash, dcc, html, dash_table
+from dash import Dash, dcc, html, dash_table, Input, Output, State
 
 df_reference = pd.read_csv('accounts_reference.csv')
 
@@ -32,10 +32,14 @@ app.layout = html.Div([
     ],
     tooltip_duration=None
 
-     ) # defaults to 500
+     ), # defaults to 500,
 
-    ]
-)
+    html.Div([
+    html.Button('Submit', id='submit-val', n_clicks=0) ])
+
+])
+
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
