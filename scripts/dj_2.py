@@ -50,15 +50,17 @@ def read_ledgie_data():
         print('Delta is not zero for this dataset')
 
 
-df_upload = pd.read_csv('qb_data_2.csv')
-
-
+url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
+df_upload = pd.read_csv(url, on_bad_lines='skip')
 
 def upload():
 
-    #read google csv data 
-    url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
+    #reference sheet for reference = account
+    url = f'https://docs.google.com/spreadsheets/d/1aAIvASexMT5qHFtSWFHsFMGYOM5AEFnfxSQKkhBDn_U/gviz/tq?tqx=out:csv&sheet=TryReference'
     df_reference = pd.read_csv(url, on_bad_lines='skip')
+
+    #read google csv data 
+
 
     journal_entry = JournalEntry() #declare journal entry object
     journal_entry.Line = [] #empty list that will contain the journal entries for the day 
@@ -68,13 +70,16 @@ def upload():
 
     for entry in range(0,len(df_upload)):
         #get a specific account with a query 
-        search_ref = 114
+        # search_ref = 114
         # df_upload['reference_no'].iloc[entry] 
-        print(search_ref)
-
-        accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
         
-        account_ref.value = search_ref
+
+        # accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
+        
+        #adding what value of the account is from google sheets column
+        # account_ref.value = search_ref
+        print(df_upload['reference_no'].iloc[entry])
+        account_ref.value = str(df_upload['reference_no'].iloc[entry])
 
         #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
 
