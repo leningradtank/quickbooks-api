@@ -71,38 +71,39 @@ def upload():
     for entry in range(0,len(df_upload)):
         #get a specific account with a query 
         # search_ref = 114
-        # df_upload['reference_no'].iloc[entry] 
+        reference_no = str(df_upload['reference_no'].iloc[entry])
+        print(reference_no)
+        print(df_reference)
+        print(df_reference.loc[df_reference['Account'] == reference_no])
+        print(df_reference.loc[df_reference['Account'] == reference_no, "Glcode"].values[0])
         
+        # account_no = df_reference.loc[df_reference['Account'] == reference_no, "Glcode"]
+        # print(account_no)
 
-        # accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
-        
-        #adding what value of the account is from google sheets column
-        # account_ref.value = search_ref
-        print(df_upload['reference_no'].iloc[entry])
-        account_ref.value = str(df_upload['reference_no'].iloc[entry])
+    #     account_ref.value = str(df_upload['reference_no'].iloc[entry])
 
-        #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
+    #     #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
 
-        account_ref.name = df_upload['Account'].iloc[entry]
-        account_ref.type = df_upload['Type'].iloc[entry]
+    #     account_ref.name = df_upload['Account'].iloc[entry]
+    #     account_ref.type = df_upload['Type'].iloc[entry]
 
-        detail_one = JournalEntryLineDetail()
-        detail_one.PostingType = df_upload['PostingType'].iloc[entry]
-        detail_one.AccountRef = account_ref
+    #     detail_one = JournalEntryLineDetail()
+    #     detail_one.PostingType = df_upload['PostingType'].iloc[entry]
+    #     detail_one.AccountRef = account_ref
 
-        line_one = JournalEntryLine()
-        line_one.JournalEntryLineDetail = detail_one
-        line_one.LineNum = 0
-        line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
+    #     line_one = JournalEntryLine()
+    #     line_one.JournalEntryLineDetail = detail_one
+    #     line_one.LineNum = 0
+    #     line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
 
-        amount = df_upload['balance'].iloc[entry]
+    #     amount = df_upload['balance'].iloc[entry]
 
-        line_one.Amount = amount.astype(str)
-        line_one.DetailType = "JournalEntryLineDetail"
+    #     line_one.Amount = amount.astype(str)
+    #     line_one.DetailType = "JournalEntryLineDetail"
 
-        journal_entry.Line.append(line_one)
+    #     journal_entry.Line.append(line_one)
 
-    journal_entry.save(qb=auth())
+    # journal_entry.save(qb=auth())
     
 
 upload()
