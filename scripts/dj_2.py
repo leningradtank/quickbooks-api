@@ -73,9 +73,7 @@ def upload():
         # search_ref = 114
         reference_no = str(df_upload['reference_no'].iloc[entry])
         print(reference_no)
-        print(df_reference)
-        print(df_reference.loc[df_reference['Account'] == reference_no])
-        print(df_reference.loc[df_reference['Account'] == reference_no, "Glcode"].values[0])
+        print(df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item())
         
         # account_no = df_reference.loc[df_reference['Account'] == reference_no, "Glcode"]
         # print(account_no)
