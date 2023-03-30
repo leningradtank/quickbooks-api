@@ -12,13 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 sheet_id = os.getenv('SHEET_ID')
-sheet_name = os.getenv('SHEET_NAME')
-
-def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
-    url= f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
-    df_reference = pd.read_csv(url, on_bad_lines='skip')
-
-    
+sheet_name = os.getenv('SHEET_NAME')    
 
 def auth():
     auth_client = AuthClient(
@@ -39,27 +33,26 @@ def auth():
 
 def read_ledgie_data():
     #to be changed and instead read from ledgie db 
-    df_ledgie = pd.read_csv('ledgie_data.csv')
+    df_ledgie = pd.read_csv('QBsheet.csv')
 
-    delta = df_ledgie['tot_net_amt'].sum()
-
-    #check if the diff is 0 , as credits = debits
-    if delta == 0:
-        print('Delta is 0')
-    else:
-        print('Delta is not zero for this dataset')
+    return df_ledgie
 
 
-url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
-df_upload = pd.read_csv(url, on_bad_lines='skip')
+def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
+    url= f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
+    df_reference = pd.read_csv(url, on_bad_lines='skip')
+
+    return df_reference
 
 
 
 def upload():
 
+    #read reference no for accounts
+    df_upload = read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name)
+
     #read ledgie data 
-    url = f'https://docs.google.com/spreadsheets/d/1aAIvASexMT5qHFtSWFHsFMGYOM5AEFnfxSQKkhBDn_U/gviz/tq?tqx=out:csv&sheet=TryReference'
-    df_reference = pd.read_csv(url, on_bad_lines='skip')
+    df_reference = read_ledgie_data()
 
     journal_entry = JournalEntry() #declare journal entry object
     journal_entry.Line = [] #empty list that will contain the journal entries for the day 
@@ -75,16 +68,13 @@ def upload():
         # print(reference_no)
         search_ref = df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item()
         
-        # #get a specific account with a query 
-        # search_ref = 114
-        # # df_upload['reference_no'].iloc[entry] 
-        # print(search_ref)
 
+        #Cross referencing the reference number with account number and posting journal entry
         accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
         
         account_ref.value = search_ref
 
-        #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
+        #Journal Entries
 
         account_ref.name = df_upload['Account'].iloc[entry]
         account_ref.type = df_upload['Type'].iloc[entry]
@@ -92,6 +82,8 @@ def upload():
         detail_one = JournalEntryLineDetail()
         detail_one.PostingType = df_upload['PostingType'].iloc[entry]
         detail_one.AccountRef = account_ref
+
+        #Only 1 Journal Line per Day
 
         line_one = JournalEntryLine()
         line_one.JournalEntryLineDetail = detail_one
@@ -109,6 +101,4 @@ def upload():
     print("done")
     
 
-# upload()
-
-read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name)
+upload()
