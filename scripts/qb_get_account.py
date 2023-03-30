@@ -11,29 +11,29 @@ from dotenv import load_dotenv
 load_dotenv()
 
 auth_client = AuthClient(
-        client_id= os.getenv('client_id'),
-        client_secret= os.getenv('client_secret'),
-        access_token= os.getenv('access_token'),
+        client_id= os.getenv('CLIENT_ID'),
+        client_secret= os.getenv('CLIENT_SECRET'),
+        access_token= os.getenv('ACCESS_TOKEN'),
         environment='sandbox',
         redirect_uri='http://localhost:8000/callback',
     )
 
 client = QuickBooks(
         auth_client=auth_client,
-        refresh_token=os.getenv('refresh_token'),
-        company_id=os.getenv('company_id'),
+        refresh_token=os.getenv('REFRESH_TOKEN'),
+        company_id=os.getenv('COMPANY_ID'),
     )
 
-df_upload = pd.read_csv('qb_data_2.csv')
+# df_upload = pd.read_csv('qb_data_2.csv')
 
 #get a specific account with a query 
-search_ref = df_upload['reference_no'].iloc[1]
+search_ref = 1
 print(search_ref)
 accounts = Account.where("id = '{}'".format(search_ref), qb=client)
 
 for account in accounts:
         all = account.to_json()
-        print(all)
+        print(account.to_json())
 
 
 # print(account.to_json())

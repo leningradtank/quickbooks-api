@@ -11,17 +11,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 auth_client = AuthClient(
-        client_id= os.getenv('client_id'),
-        client_secret= os.getenv('client_secret'),
-        access_token= os.getenv('access_token'),
+        client_id= os.getenv('CLIENT_ID'),
+        client_secret= os.getenv('CLIENT_SECRET'),
+        access_token= os.getenv('ACCESS_TOKEN'),
         environment='sandbox',
         redirect_uri='http://localhost:8000/callback',
     )
 
 client = QuickBooks(
         auth_client=auth_client,
-        refresh_token=os.getenv('refresh_token'),
-        company_id=os.getenv('company_id'),
+        refresh_token=os.getenv('REFRESH_TOKEN'),
+        company_id=os.getenv('COMPANY_ID'),
     )
 
 # from quickbooks.objects.customer import Customer

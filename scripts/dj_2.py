@@ -32,7 +32,7 @@ def auth():
     client = QuickBooks(
             auth_client=auth_client,
             refresh_token=os.getenv('refresh_token'),
-            company_id=os.getenv('company_id'),
+            company_id=os.getenv('COMPANY_ID'),
         )
     
     return client
@@ -71,7 +71,7 @@ def upload():
     for entry in range(0,len(df_upload)):
         #get a specific account with a query 
         # search_ref = 114
-        reference_no = str(df_upload['reference_no'].iloc[entry])
+        reference_no = df_upload['reference_no'].iloc[entry]
         print(reference_no)
         print(df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item())
         

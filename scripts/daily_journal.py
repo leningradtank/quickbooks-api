@@ -22,17 +22,17 @@ def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
 
 def auth():
     auth_client = AuthClient(
-            client_id= os.getenv('client_id'),
-            client_secret= os.getenv('client_secret'),
-            access_token= os.getenv('access_token'),
+            client_id= os.getenv('CLIENT_ID'),
+            client_secret= os.getenv('CLIENT_SECRET'),
+            access_token= os.getenv('ACCESS_TOKEN'),
             environment='sandbox',
             redirect_uri='http://localhost:8000/callback',
         )
 
     client = QuickBooks(
             auth_client=auth_client,
-            refresh_token=os.getenv('refresh_token'),
-            company_id=os.getenv('company_id'),
+            refresh_token=os.getenv('REFRESH_TOKEN'),
+            company_id=os.getenv('COMPANY_ID'),
         )
     
     return client
@@ -50,14 +50,15 @@ def read_ledgie_data():
         print('Delta is not zero for this dataset')
 
 
-df_upload = pd.read_csv('qb_data_2.csv')
+url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
+df_upload = pd.read_csv(url, on_bad_lines='skip')
 
 
 
 def upload():
 
-    #read google csv data 
-    url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
+    #read ledgie data 
+    url = f'https://docs.google.com/spreadsheets/d/1aAIvASexMT5qHFtSWFHsFMGYOM5AEFnfxSQKkhBDn_U/gviz/tq?tqx=out:csv&sheet=TryReference'
     df_reference = pd.read_csv(url, on_bad_lines='skip')
 
     journal_entry = JournalEntry() #declare journal entry object
@@ -67,10 +68,17 @@ def upload():
     account_ref= Ref()
 
     for entry in range(0,len(df_upload)):
-        #get a specific account with a query 
-        search_ref = 114
-        # df_upload['reference_no'].iloc[entry] 
-        print(search_ref)
+
+        #reference ledgie data account number with reference no from a google sheet
+        
+        reference_no = df_upload['reference_no'].iloc[entry]
+        # print(reference_no)
+        search_ref = df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item()
+        
+        # #get a specific account with a query 
+        # search_ref = 114
+        # # df_upload['reference_no'].iloc[entry] 
+        # print(search_ref)
 
         accounts = Account.where("id = '{}'".format(search_ref), qb=auth())
         
@@ -98,6 +106,9 @@ def upload():
         journal_entry.Line.append(line_one)
 
     journal_entry.save(qb=auth())
+    print("done")
     
 
-upload()
+# upload()
+
+read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name)
