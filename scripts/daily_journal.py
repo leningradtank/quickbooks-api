@@ -33,7 +33,7 @@ def auth():
 
 def read_ledgie_data():
     #to be changed and instead read from ledgie db 
-    df_ledgie = pd.read_csv('QBsheet.csv')
+    df_ledgie = pd.read_csv('QBsheet.csv', on_bad_lines='skip')
 
     return df_ledgie
 
