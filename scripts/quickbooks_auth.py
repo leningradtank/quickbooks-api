@@ -22,6 +22,7 @@ while auth_header is None:
         bearer_token = auth_client.access_token
         realm_id = auth_client.realm_id
         auth_header = f'Bearer {bearer_token}'
+        print("User successfully authenticated.") # or logging.info("User successfully authenticated.")
     else:
         # Wait for the user to log in and redirect to the callback URL
         try:

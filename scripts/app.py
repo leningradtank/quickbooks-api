@@ -3,7 +3,7 @@ import webbrowser
 from dash import Dash, dcc, html, dash_table, Input, Output, State
 import subprocess
 
-df_reference = pd.read_csv('accounts_reference.csv')
+df_ledgie = pd.read_csv('accounts_reference.csv')
 
 app = Dash(__name__)
 
@@ -16,8 +16,8 @@ app.layout = html.Div([
     ]),
 
     dash_table.DataTable(
-        df_reference.to_dict('records'), 
-        [{"name": i, "id": i} for i in df_reference.columns],
+        df_ledgie.to_dict('records'), 
+        [{"name": i, "id": i} for i in df_ledgie.columns],
         style_table={'height': 400, 'overflowX': 'auto'} ,
         style_data={
             'whiteSpace': 'normal',
@@ -30,7 +30,7 @@ app.layout = html.Div([
             {
                 column: {'value': str(value), 'type': 'markdown'}
                 for column, value in row.items()
-            } for row in df_reference.to_dict('records')
+            } for row in df_ledgie.to_dict('records')
         ],
         tooltip_duration=None
 
