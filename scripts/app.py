@@ -1,4 +1,5 @@
 import pandas as pd
+import webbrowser
 from dash import Dash, dcc, html, dash_table, Input, Output, State
 import subprocess
 
@@ -10,8 +11,8 @@ app.layout = html.Div([
     html.H1(children="Journal entry for yesterday's data", style={'textAlign': 'center'}),
     
     html.Div([
-        html.P('Dash converts Python classes into HTML', style={'textAlign': 'center'}),
-        html.P("This conversion happens behind the scenes by Dash's JavaScript front-end", style={'textAlign': 'center'})
+        html.P('Welcome JR', style={'textAlign': 'center'}),
+        html.P("Please click submit if the data looks ok", style={'textAlign': 'center'})
     ]),
 
     dash_table.DataTable(
@@ -39,6 +40,9 @@ app.layout = html.Div([
         html.Button('Submit', id='submit-val', n_clicks=0, style={'textAlign': 'center'}) 
     ], style={'textAlign': 'center'})
 ])
+
+# Open the Dash URL in the default browser when the script is run
+webbrowser.open('http://127.0.0.1:8050/')
 
 @app.callback(
     Output('submit-val', 'n_clicks'),
