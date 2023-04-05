@@ -1,4 +1,5 @@
 import webbrowser
+import requests
 from intuitlib.client import AuthClient
 from intuitlib.enums import Scopes
 
@@ -23,14 +24,27 @@ while auth_header is None:
         auth_header = f'Bearer {bearer_token}'
     else:
         # Wait for the user to log in and redirect to the callback URL
-        print("Unable to log in")
+        try:
+            response = requests.get(auth_url)
+            response.raise_for_status()
+        except requests.exceptions.HTTPError as e:
+            print(f"Error: {e}")
+            break
+        except requests.exceptions.RequestException as e:
+            print(f"Error: {e}")
+            break
+        else:
+            continue
 
-# Make API call using bearer token and realm ID
-base_url = f'https://{environment}-quickbooks.api.intuit.com'
-url = f'{base_url}/v3/company/{realm_id}/companyinfo/{realm_id}'
-headers = {
-    'Authorization': auth_header,
-    'Accept': 'application/json'
-}
-response = requests.get(url, headers=headers)
-print(response.json())
+if auth_header is not None:
+    # Make API call using bearer token and realm ID
+    base_url = f'https://{environment}-quickbooks.api.intuit.com'
+    url = f'{base_url}/v3/company/{realm_id}/companyinfo/{realm_id}'
+    headers = {
+        'Authorization': auth_header,
+        'Accept': 'application/json'
+    }
+    response = requests.get(url, headers=headers)
+    print(response.json())
+else:
+    print("Unable to authenticate the user.") 
