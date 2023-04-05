@@ -12,26 +12,20 @@ from dotenv import load_dotenv
 load_dotenv()
 
 sheet_id = os.getenv('SHEET_ID')
-sheet_name = os.getenv('SHEET_NAME')
-
-def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
-    url= f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
-    df_reference = pd.read_csv(url, on_bad_lines='skip')
-
-    
+sheet_name = os.getenv('SHEET_NAME')    
 
 def auth():
     auth_client = AuthClient(
-            client_id= os.getenv('client_id'),
-            client_secret= os.getenv('client_secret'),
-            access_token= os.getenv('access_token'),
+            client_id= os.getenv('CLIENT_ID'),
+            client_secret= os.getenv('CLIENT_SECRET'),
+            access_token= os.getenv('ACCESS_TOKEN'),
             environment='sandbox',
             redirect_uri='http://localhost:8000/callback',
         )
 
     client = QuickBooks(
             auth_client=auth_client,
-            refresh_token=os.getenv('refresh_token'),
+            refresh_token=os.getenv('REFRESH_TOKEN'),
             company_id=os.getenv('COMPANY_ID'),
         )
     
@@ -39,69 +33,42 @@ def auth():
 
 def read_ledgie_data():
     #to be changed and instead read from ledgie db 
-    df_ledgie = pd.read_csv('ledgie_data.csv')
+    df_ledgie = pd.read_csv('QBsheet.csv', on_bad_lines='skip')
 
-    delta = df_ledgie['tot_net_amt'].sum()
-
-    #check if the diff is 0 , as credits = debits
-    if delta == 0:
-        print('Delta is 0')
-    else:
-        print('Delta is not zero for this dataset')
+    return df_ledgie
 
 
-url = f'https://docs.google.com/spreadsheets/d/1OCdBUrNH4eSH5PUKa2UCocEVtcYT3EqXxL-GY8s3RL8/gviz/tq?tqx=out:csv&sheet=QBsheet'
-df_upload = pd.read_csv(url, on_bad_lines='skip')
-
-def upload():
-
-    #reference sheet for reference = account
-    url = f'https://docs.google.com/spreadsheets/d/1aAIvASexMT5qHFtSWFHsFMGYOM5AEFnfxSQKkhBDn_U/gviz/tq?tqx=out:csv&sheet=TryReference'
+def read_from_google_sheet(sheet_id = sheet_id, sheet_name = sheet_name):
+    url= f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
     df_reference = pd.read_csv(url, on_bad_lines='skip')
 
-    #read google csv data 
+    return df_reference
 
 
-    journal_entry = JournalEntry() #declare journal entry object
-    journal_entry.Line = [] #empty list that will contain the journal entries for the day 
 
-     #declare account reference object
-    account_ref= Ref()
+def upload():
+    # read reference no for accounts
+    df_upload = read_from_google_sheet(sheet_id=sheet_id, sheet_name=sheet_name)
 
-    for entry in range(0,len(df_upload)):
-        #get a specific account with a query 
-        # search_ref = 114
-        reference_no = df_upload['reference_no'].iloc[entry]
-        print(reference_no)
-        print(df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item())
-        
-        # account_no = df_reference.loc[df_reference['Account'] == reference_no, "Glcode"]
-        # print(account_no)
+    # read ledgie data 
+    df_reference = read_ledgie_data()
 
-    #     account_ref.value = str(df_upload['reference_no'].iloc[entry])
+    # create a list of JournalEntryLine objects
+    lines = []
+    for index, row in df_upload.iterrows():
+        reference_no = row["reference_no"]
+        search_ref = df_reference.loc[df_reference['Account'] == reference_no]['Glcode'].item()
+        account_ref = Ref(value=search_ref, name=row["Account"], type=row["Type"])
+        detail_one = JournalEntryLineDetail(PostingType=row["PostingType"], AccountRef=account_ref)
+        line_one = JournalEntryLine(JournalEntryLineDetail=detail_one, LineNum=0, Description="ledgie activity for " + row["system_date"],
+                                    Amount=str(row["balance"]), DetailType="JournalEntryLineDetail")
+        lines.append(line_one)
 
-    #     #next step will need to change dfupload to fetch(accounts.name and accounts.type) and convert from json to string
+    # create a JournalEntry object and save it
+    journal_entry = JournalEntry(Line=lines)
+    journal_entry.save(qb=auth())
+    print("done")
 
-    #     account_ref.name = df_upload['Account'].iloc[entry]
-    #     account_ref.type = df_upload['Type'].iloc[entry]
-
-    #     detail_one = JournalEntryLineDetail()
-    #     detail_one.PostingType = df_upload['PostingType'].iloc[entry]
-    #     detail_one.AccountRef = account_ref
-
-    #     line_one = JournalEntryLine()
-    #     line_one.JournalEntryLineDetail = detail_one
-    #     line_one.LineNum = 0
-    #     line_one.Description = "ledgie activity for " + df_upload['system_date'].iloc[entry]
-
-    #     amount = df_upload['balance'].iloc[entry]
-
-    #     line_one.Amount = amount.astype(str)
-    #     line_one.DetailType = "JournalEntryLineDetail"
-
-    #     journal_entry.Line.append(line_one)
-
-    # journal_entry.save(qb=auth())
     
 
 upload()
